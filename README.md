@@ -72,6 +72,20 @@ val name = "Sam"
 val str = "hello $name. Your name has ${name.length} characters"
 ```
 - Some example of String templates are [here](src/test/kotlin/stringtemplate/StringTemplateDemoTest.kt)
+
+#### Ranges
+- A range is defined as an interval that has a start value and an end value. Any types which are comparable can be used to create a range, which is done using the .. operator:
+```
+       val aToZ = "a".."z"
+       val oneToNine = 1..9
+```
+- Once a range is created, the in operator can be used to test whether a given value is included in the range
+- Kotlin Ranges could be found in below  forms.
+  1. m..n
+  2. n downTo m
+  3. m until n
+  4. 1 rangeTo n
+
 ## Java vs Kotlin
 
  
