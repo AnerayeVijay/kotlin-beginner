@@ -1,4 +1,4 @@
-package stringtemplate
+package com.stringtemplate
 
 import com.stringtemplate.countLengthOfString
 import com.stringtemplate.sayHello
