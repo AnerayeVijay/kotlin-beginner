@@ -15,9 +15,9 @@ Kotlin is safe. It avoids the most dangers of null references from the code  and
  - Functional Programing (FP) is style of structuring your program where the focus is to transforming data with expression which should not have side affect.
 - FP is a style of building the structure and elements of programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data
 - Kotlin is perfect blend of Object-Orianted and functional programing paradigms. It brings both worlds closer together
-------------------------------
+---------------------------
 ## Kotlin Basic
-### Vals and vars
+### Kotlin Variables and Data Types
 #### Var
 - The var is a mutable variable, which is, a variable that can be changed to another value by reassigning it.initialized later:
 ```
@@ -41,8 +41,9 @@ name = "Kotlin1.3"
 #### Type inference (Statically Typed)
 Did you notice in the above section that the type of the variable was not included when it was initialized? This is different to Java where the type of the variable must always accompany its declaration
 
-### Basic types
-#### Numbers
+-----------
+#### Basic types
+##### Numbers
 The built-in number types are as follows:
 Type   Width
 Long    64
@@ -51,18 +52,18 @@ Short   16
 Byte    8
 Double  64
 Float   32
-#### Booleans
+##### Booleans
 There are usual negation, conjunction, and disjunction operations.
-#### Chars
+##### Chars
 Chars represent a single character. Character literals use single quotes
-#### Strings
+##### Strings
 Just as in Java, strings are immutable, String literals can be created using double quotes
-#### Arrays
+##### Arrays
 - In Kotlin, we can create an array by using the library function arrayOf():
 ```` val array = arrayOf(1, 2, 3) ````
 - Alternatively, we can create an Array from an initial size and a function
 ```        val perfectSquares = Array(10, { k -> k * k }) ```
-#### String templates
+##### String templates
 - String templates are a simple and effective way of embedding values, variables, or even expressions inside a string without the need for pattern replacement or string concatenation
 val name = "Developer"
 val str = "hello $name"
@@ -73,7 +74,7 @@ val str = "hello $name. Your name has ${name.length} characters"
 ```
 - Some example of String templates are [here](src/test/kotlin/stringtemplate/StringTemplateDemoTest.kt)
 
-#### Ranges
+##### Ranges
 - A range is defined as an interval that has a start value and an end value. Any types which are comparable can be used to create a range, which is done using the .. operator:
 ```
        val aToZ = "a".."z"
@@ -85,11 +86,30 @@ val str = "hello $name. Your name has ${name.length} characters"
   2. n downTo m
   3. m until n
   4. 1 rangeTo n
+------------------
+### Visibility modifiers
+Usually not all functions or classes are designed to be part of your public API. Therefore, it is desirable to mark some parts of your code as internal and not accessible outside of the class or package
+#### Private
+Inside a class, interface, or object, any private function or property is only visible to other members of the same class, interface, or object:
+```
+class Person {
+         private fun age(): Int = 21
+}
+```
+Here, the function age() would only be invokable by other functions in the Person class.
+#### Protected
+Any functions or properties declared as protected inside a class or interface are visible only to members of that class or interface, as well as subclasses.
+#### Internal
+Any code that is marked as internal is visible from other classes and functions inside the same module
+A module is defined as a Maven or Gradle module or an IntelliJ module
+Effectively, internal acts as public to a module, rather than public to the universe:
+
+-----------------
 
 ## Java vs Kotlin
 
+------------------
  
-## Kotlin Variables and Data Types
 
 ## Developers: Getting Started
 
