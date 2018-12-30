@@ -32,7 +32,7 @@ brew tap caskroom/versions
 brew cask install java8
 
 # Checkout the monorepo:
-git clone git@github.com:springernature/oasis.git
+git clone https://github.com/AnerayeVijay/kotlin-beginner.git
 ```
 ### Running the Applications
 
