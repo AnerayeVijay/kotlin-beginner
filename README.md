@@ -71,6 +71,7 @@ val str = "hello $name"
 val name = "Sam"
 val str = "hello $name. Your name has ${name.length} characters"
 ```
+- Some example of String templates are [here](src/test/kotlin/stringtemplate/StringTemplateDemoTest.kt)
 ## Java vs Kotlin
 
  
