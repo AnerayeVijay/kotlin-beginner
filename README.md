@@ -72,7 +72,7 @@ val str = "hello $name"
 val name = "Sam"
 val str = "hello $name. Your name has ${name.length} characters"
 ```
-- Some example of String templates are [here](src/test/kotlin/stringtemplate/StringTemplateDemoTest.kt)
+- Some example of String templates are [here](src/test/kotlin/com/stringtemplate/StringTemplateDemoTest.kt)
 
 ##### Ranges
 - A range is defined as an interval that has a start value and an end value. Any types which are comparable can be used to create a range, which is done using the .. operator:
@@ -86,6 +86,7 @@ val str = "hello $name. Your name has ${name.length} characters"
   2. n downTo m
   3. m until n
   4. 1 rangeTo n
+- Some example of String templates are [here](https://github.com/AnerayeVijay/kotlin-beginner/blob/master/src/test/kotlin/com/range/RangeDemoTest.kt)
 ------------------
 ### Visibility modifiers
 Usually not all functions or classes are designed to be part of your public API. Therefore, it is desirable to mark some parts of your code as internal and not accessible outside of the class or package
