@@ -90,6 +90,9 @@ val str = "hello $name. Your name has ${name.length} characters"
 ------------------
 ### Visibility modifiers
 Usually not all functions or classes are designed to be part of your public API. Therefore, it is desirable to mark some parts of your code as internal and not accessible outside of the class or package
+#### public
+This means they are fully visible to any code that wishes to use them.If no modifier is given, then the default is used, which is public
+
 #### Private
 Inside a class, interface, or object, any private function or property is only visible to other members of the same class, interface, or object:
 ```
