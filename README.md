@@ -12,12 +12,67 @@ Kotlin is distributed under Apache License, Version 2.0. The Kompiler (Kotlin co
  #### Safe
 Kotlin is safe. It avoids the most dangers of null references from the code  and annoying NullPointerExceptions by supporting nullability as part of its type system.
  #### Functional and Object Oriented Capabilities
- - Functional Programing
-Functional Programing is style of structuring your program where the focus is to transforming data with expression which should not have side affect.
+ - Functional Programing (FP) is style of structuring your program where the focus is to transforming data with expression which should not have side affect.
 - FP is a style of building the structure and elements of programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data
 - Kotlin is perfect blend of Object-Orianted and functional programing paradigms. It brings both worlds closer together
+------------------------------
+## Kotlin Basic
+### Vals and vars
+#### Var
+- The var is a mutable variable, which is, a variable that can be changed to another value by reassigning it.initialized later:
+```
+val name = "kotlin"
+name = "Kotlin1.3"
 
+```       
+- In addition, the var can be 
+```
+ var name: String
+ name = "kotlin"
+```
+#### Val
+ - The keyword val is used to declare a read-only variable. This is equivalent to declaring a final variable in Java.
+ - A val must be initialized when it is created
+ ```
+        val name = "kotlin"
+        val anotherName : String // Compile error as val must be initialized when it is created
+ ```
+ 
+#### Type inference (Statically Typed)
+Did you notice in the above section that the type of the variable was not included when it was initialized? This is different to Java where the type of the variable must always accompany its declaration
+
+### Basic types
+#### Numbers
+The built-in number types are as follows:
+Type   Width
+Long    64
+Int     32
+Short   16
+Byte    8
+Double  64
+Float   32
+#### Booleans
+There are usual negation, conjunction, and disjunction operations.
+#### Chars
+Chars represent a single character. Character literals use single quotes
+#### Strings
+Just as in Java, strings are immutable, String literals can be created using double quotes
+#### Arrays
+- In Kotlin, we can create an array by using the library function arrayOf():
+```` val array = arrayOf(1, 2, 3) ````
+- Alternatively, we can create an Array from an initial size and a function
+```        val perfectSquares = Array(10, { k -> k * k }) ```
+#### String templates
+- String templates are a simple and effective way of embedding values, variables, or even expressions inside a string without the need for pattern replacement or string concatenation
+val name = "Developer"
+val str = "hello $name"
+- Arbitrary expressions can be embedded by prefixing with a dollar ($) and wrapping in braces {}:
+```
+val name = "Sam"
+val str = "hello $name. Your name has ${name.length} characters"
+```
 ## Java vs Kotlin
+
  
 ## Kotlin Variables and Data Types
 
